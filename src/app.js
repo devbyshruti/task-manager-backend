@@ -14,4 +14,10 @@ app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/tasks', taskRoutes);
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    message: "Task Manager API is running"
+  });
+}); 
+
 export default app;
