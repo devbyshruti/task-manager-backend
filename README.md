@@ -2,6 +2,14 @@
 
 A secure, RESTful API built with **Node.js**, **Express**, and **Supabase**. This project implements a multi-tenant task management system where data isolation is enforced through JWT-based ownership validation.
 
+## Live API
+
+Base URL:
+https://task-manager-backend-vzh0.onrender.com
+
+> Note: This API is hosted on Render free tier.
+> The first request after inactivity may take 30–60 seconds (cold start).
+
 ## Key Features
 - **User Authentication:** Registration and Login using `bcrypt` for password hashing and `jsonwebtoken` (JWT) for session management.
 - **Ownership Validation:** Custom middleware and route logic ensure users can only access projects and tasks they own.
